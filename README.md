@@ -2,7 +2,7 @@
 
 # Course Registration & Timetable Builder
 
-## 📚 Project Overview
+ Project Overview
 
 The **Course Registration & Timetable Builder** is a software application designed to simplify the course registration process and automatically generate organized academic timetables for students.
 
@@ -10,7 +10,7 @@ The system allows students to register for courses, check course availability, a
 
 The project aims to make course registration faster, more accurate, and user-friendly for students and educational institutions.
 
-## 🎯 Objectives
+## Objectives
 
 * Simplify the course registration process.
 * Allow students to select and enroll in available courses.
@@ -19,7 +19,7 @@ The project aims to make course registration faster, more accurate, and user-fri
 * Display course details, class timings, and instructor information.
 * Improve time management and academic planning.
 
-## ✨ Key Features
+##  Key Features
 
 ### 1. Course Registration
 
@@ -76,7 +76,7 @@ The following technologies can be used to develop this project:
 6. The timetable builder generates a weekly schedule.
 7. The student views the final timetable.
 
-## 📂 Project Structure
+##  Project Structure
 
 A suggested Java project structure:
 
@@ -133,7 +133,7 @@ java -cp src Main
 
 *Note: These commands assume a basic Java project without external dependencies or package declarations. Adjust them to match your actual project structure.*
 
-## 📊 Expected Output
+##  Expected Output
 
 The system is expected to provide:
 
@@ -153,7 +153,7 @@ Example timetable:
 
 *The timetable above is illustrative and does not represent actual course schedules.*
 
-## 🔮 Future Enhancements
+##  Future Enhancements
 
 * User authentication for students and administrators.
 * A graphical user interface (GUI).
