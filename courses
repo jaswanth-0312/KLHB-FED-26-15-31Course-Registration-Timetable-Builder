@@ -1,0 +1,32 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
+// ---------------------------------------------------------
+// Course Registration and Timetable Builder
+// everything is in this one file
+// ---------------------------------------------------------
+
+
+// this class stores the details of one course
+class Course {
+
+    String code;
+    String name;
+    int credits;
+    String day;
+    int start;   // starting hour (24 hr format)
+    int end;     // ending hour
+
+    public Course(String code, String name, int credits, String day, int start, int end) {
+        this.code = code;
+        this.name = name;
+        this.credits = credits;
+        this.day = day;
+        this.start = start;
+        this.end = end;
+    }
+
+    public void show() {
+        System.out.println(code + " | " + name + " | " + credits + " credits | " + day + " " + start + ":00 - " + end + ":00");
+    }
+}
