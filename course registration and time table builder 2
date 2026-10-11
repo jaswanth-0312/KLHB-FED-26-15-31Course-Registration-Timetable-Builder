@@ -1,0 +1,73 @@
+
+import java.util.Scanner;
+
+public class CourseRegistration {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        String[] courses = {
+            "Java",
+            "Mathematics",
+            "Physics",
+            "English",
+            "Digital Electronics"
+        };
+
+        int[] registered = new int[5];
+        int choice;
+
+        System.out.println("COURSE REGISTRATION AND TIMETABLE BUILDER");
+
+        System.out.println("\nAvailable Courses:");
+
+        for (int i = 0; i < 5; i++) {
+            System.out.println((i + 1) + ". " + courses[i]);
+        }
+
+        do {
+            System.out.print("\nEnter course number to register (0 to stop): ");
+            choice = sc.nextInt();
+
+            if (choice >= 1 && choice <= 5) {
+                if (registered[choice - 1] == 0) {
+                    registered[choice - 1] = 1;
+                    System.out.println("Course registered successfully!");
+                } else {
+                    System.out.println("Course already registered!");
+                }
+            } else if (choice != 0) {
+                System.out.println("Invalid course number!");
+            }
+
+        } while (choice != 0);
+
+        System.out.println("\nREGISTERED COURSES");
+
+        for (int i = 0; i < 5; i++) {
+            if (registered[i] == 1) {
+                System.out.println(courses[i]);
+            }
+        }
+
+        System.out.println("\nYOUR TIMETABLE");
+
+        String[] days = {
+            "Monday", "Tuesday", "Wednesday",
+            "Thursday", "Friday"
+        };
+
+        int day = 0;
+
+        for (int i = 0; i < 5; i++) {
+            if (registered[i] == 1) {
+                System.out.println(days[day] + " - " + courses[i]);
+                day++;
+            }
+        }
+
+        System.out.println("\nThank you for registering!");
+
+      
+    }
+}
