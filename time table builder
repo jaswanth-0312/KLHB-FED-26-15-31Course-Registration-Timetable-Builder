@@ -1,0 +1,38 @@
+
+import java.util.Scanner;
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class CourseRegistration {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        try {
+            FileWriter fw = new FileWriter("timetable.txt");
+
+            System.out.print("Enter number of courses: ");
+            int n = sc.nextInt();
+            sc.nextLine();
+
+            fw.write("Course Registration and Timetable\n");
+            
+
+            for (int i = 1; i <= n; i++) {
+                System.out.print("Enter course name " + i + ": ");
+                String course = sc.nextLine();
+
+                fw.write("Period " + i + ": " + course + "\n");
+            }
+
+            
+
+            System.out.println("Courses registered successfully!");
+            System.out.println("Timetable saved in timetable.txt");
+
+        } catch (IOException e) {
+            System.out.println("An error occurred while writing the file.");
+        }
+
+        sc.close();
+    }
+}
